@@ -1,5 +1,6 @@
 <?php
-include_once '../config/config.php';                  // Инициализация настроек
+include_once '../config/config.php';            // Инициализация настроек
+include_once '../config/db.php';                // Инициализация баз данных
 include_once '../library/mainFunctions.php';    // основные функции
 
 

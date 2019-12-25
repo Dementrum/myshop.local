@@ -12,7 +12,7 @@
   *@
  */
 function loadPage($smarty, $controllerName, $actionName = 'index') {
-   include_once PATH_PREFIX . $controllerName . PATH_POSTFIX;
+   include_once PATH_PREFIX . $controllerName . PATH_POSTFIX; // ../controllers/ $controllerName  'Controller.php'
 
     //Формируем название функции
     $function = $actionName . 'Action';
@@ -42,5 +42,5 @@ function d($value = null, $die = 1){
     print_r($value);
     echo "</pre>";
 
-    if($die) $die;
+    if($die) die;
 }
