@@ -9,7 +9,7 @@
   *  
   * @param string $controllerName  название контроллера
   * @param string $actionName  название функции обработки страницы
-  *@
+  *
  */
 function loadPage($smarty, $controllerName, $actionName = 'index') {
    include_once PATH_PREFIX . $controllerName . PATH_POSTFIX; // ../controllers/ $controllerName  'Controller.php'

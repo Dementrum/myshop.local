@@ -23,7 +23,8 @@ define('TEMPLATE_WEB_PATH', "/templates/{$template}/");
 
 //< Инициализация шаблонизатора Smarty
 // put full path to Smarty.class.php
-require('../library/Smarty/libs/Smarty.class.php'); //  подключаем библиотеку Smarty 
+require('../library/Smarty/libs/Smarty.class.php'); //  подключаем библиотеку Smarty
+
 $smarty = new Smarty(); // создаем экземпляр обьекта Smarty
 
 // файлы шаблонов

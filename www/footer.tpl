@@ -1,7 +1,6 @@
-
-    <footer id="footer">
-        Footer
-    </footer>
-
-</body>
+		<footer>
+			Footer
+		</footer>
+	</body>
 </html>
+

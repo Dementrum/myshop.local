@@ -1,11 +1,11 @@
 <?php
 /**
   *  Контроллер главной страницы
-  * 
+  *
  */
 
 //подключаем модели
-include_once '../models/CategoriesModels.php';
+include_once '../models/CategoriesModel.php';
 
 function testAction() {
     echo "IndexController.php > testAction";
@@ -17,11 +17,12 @@ function testAction() {
  *
  */
 function indexAction($smarty){
-    $rsCategories = getAllMainCatsWithChildren();
+	$rsCategories = getAllMainCatsWithChildren();
 
-    $smarty->assign('pageTitle', 'Главная страница сайта');
+	$smarty->assign('pageTitle', 'Главная страница сайта');
     $smarty->assign('rsCategories', $rsCategories);
 
     loadTemplate($smarty, 'index');// загрузка шаблона
 
 }
+
